@@ -99,7 +99,7 @@ function displayCourses(coursesToDisplay) {
         
         coursesSection.appendChild(courseDiv);
     });
-
+    
     if (totalCreditsNeeded > 0) {
         const creditsNeeded = document.createElement('p');
         creditsNeeded.textContent = `Total Credits needed: ${totalCreditsNeeded}`;
