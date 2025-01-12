@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Ryan Bodily</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ryan Bodily - Homepage">
+    <meta name="author" content="Ryan Bodily">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courselist.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Ryan Bodily
+        </h1>
+        <nav>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="www.linkedin.com/in/ryan-bodily-854960208">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card-container">
+            <section class="card">
+                <div class="card-content">
+                    <h2>Course Work</h2>
+                    <div class="text-image-container">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+            </section>
+            <section class="card">
+                <div class="card-content">
+                    <h2>Hamilton, New Zealand</h2>
+                    <img src="images/takapuna_portrait.webp" alt="Takapuna Portrait">
+                    <p>
+                        View from Takapuna Beach
+                    </p>
+                </div>
+            </section>
+        </div>
+        <h2>Courses</h2>
+        <div class="filter-buttons">
+            <button class="all">All</button>
+            <button class="cse">CSE</button>
+            <button class="wdd">WDD</button>
+        </div>
+        <section class="courses">
+            <div class="courses-list">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span id="currentYear"></span>
+            Ryan Bodily
+            New Zealand
+        </p>
+        <p id="lastModified"></p>
+
+    </footer>
+</body>
+
+</html>
