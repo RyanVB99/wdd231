@@ -1,0 +1,22 @@
+
+    "family_name": "Smith",
+    "move_in_date": "2019-01-01",
+    "number_of_people": 3,
+    "visited_by_bishopric": false,
+    "family_members": [
+        {
+            "first_name": "John",
+            "gender": "male",
+            "birth_date": "1980-01-01"
+        },
+        {
+            "first_name": "Jane",
+            "gender": "female",
+            "birth_date": "1985-01-01"
+        },
+        {
+            "first_name": "Jill",
+            "gender": "female",
+            "birth_date": "2010-01-01"
+        }
+    ]

@@ -1,0 +1,23 @@
+/* Set the font color of h2 elements to blue */
+h2 {
+    color: steelblue;
+}
+
+/* Remove the background color of the whole page */
+body {
+    background-color: transparent;
+}
+
+/* Give all images rounded corners and a slight shadow effect */
+img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the div with id "cards" */
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}

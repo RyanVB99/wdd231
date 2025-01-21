@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="WDD 231 - Dynamic Web Fundamentals - Ryan Bodily">
+    <meta name="description" content="WDD 231 - Dynamic Web Fundamentals - Ryan Bodily - Chamber">
+    <meta name="author" content="Ryan Bodily">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="WDD 231 - Dynamic Web Fundamentals - Ryan Bodily">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ryanvb99.github.io/wdd231/images/takapuna_portrait.webp">
+    <meta property="og:url" content="https://ryanvb99.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/commerce.css">
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/commerce.js"></script>
+    <script src="scripts/directory.js"></script>
+    <title>Waikato Chamber of Commerce</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Logo</a>
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-item">Home</a>
+                <a href="directory.html" class="navbar-item">Directory</a>
+                <a href="join.html" class="navbar-item">Join</a>
+                <a href="discover.html" class="navbar-item">Discover</a>
+            </div>
+            <div class="navbar-toggle" id="mobile-menu">
+                ☰
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu-content">
+        <a href="index.html" class="mobile-menu-item">Home</a>
+        <a href="directory.html" class="mobile-menu-item">Directory</a>
+        <a href="join.html" class="mobile-menu-item">Join</a>
+        <a href="discover.html" class="mobile-menu-item">Discover</a>
+    </div>
+    <div class="hero-image">
+        <img src="./images/waikato_hero_1.webp" alt="Hero Image">
+    </div>
+    <h2>Home</h2>
+    <div class="cards-container">
+        <div class="card">
+            <h3>Events</h3>
+        </div>
+        <div class="card">
+            <h3>Current Weather</h3>
+            <p>Details about the current weather.</p>
+        </div>
+        <div class="card">
+            <h3>Weather Forecast</h3>
+            <p>Details about the weather forecast.</p>
+        </div>
+    </div>
+
+    <div class="view-toggle">
+        <button id="grid-view">Grid View</button>
+        <button id="list-view">List View</button>
+    </div>
+    <div id="members-container" class="cards-container"></div>
+
+    <footer>
+        <div class="cards-container">
+            <section>
+                <p>Waikato Chamber of Commerce</p>
+                <p>Hamilton, Waikato</p>
+                <p>info@waikato.com</p>
+                <p>999-888-7777</p>
+            </section>
+            <section>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+            </section>
+            <section>
+                <p>WDD231 Class Project</p>
+                <p>Ryan Bodily</p>
+                <p>&copy; 2024 Waikato Chamber of Commerce</p>
+                <p id="lastModified"></p>
+
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

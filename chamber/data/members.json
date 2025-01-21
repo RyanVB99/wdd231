@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Waikato Tech Solutions",
+        "address": "123 Tech Street, Hamilton, Waikato, NZ",
+        "phone": "+64 7 123 4567",
+        "website": "http://waikatotech.co.nz",
+        "image": "waikato_tech.png",
+        "membership_level": 3,
+        "description": "Leading IT service provider in Waikato."
+    },
+    {
+        "name": "Hamilton Cafe",
+        "address": "456 Coffee Lane, Hamilton, Waikato, NZ",
+        "phone": "+64 7 234 5678",
+        "website": "http://hamiltoncafe.co.nz",
+        "image": "hamilton_cafe.png",
+        "membership_level": 2,
+        "description": "Cozy cafe with the best coffee in town."
+    },
+    {
+        "name": "Waikato Fitness Center",
+        "address": "789 Workout Blvd, Hamilton, Waikato, NZ",
+        "phone": "+64 7 345 6789",
+        "website": "http://waikatofitness.co.nz",
+        "image": "waikato_fitness.png",
+        "membership_level": 1,
+        "description": "State-of-the-art fitness facilities."
+    },
+    {
+        "name": "Hamilton Bookstore",
+        "address": "101 Bookworm Ave, Hamilton, Waikato, NZ",
+        "phone": "+64 7 456 7890",
+        "website": "http://hamiltonbookstore.co.nz",
+        "image": "hamilton_bookstore.png",
+        "membership_level": 2,
+        "description": "Wide selection of books and stationery."
+    },
+    {
+        "name": "Waikato Auto Repairs",
+        "address": "202 Mechanic St, Hamilton, Waikato, NZ",
+        "phone": "+64 7 567 8901",
+        "website": "http://waikatoautorepairs.co.nz",
+        "image": "waikato_auto.png",
+        "membership_level": 3,
+        "description": "Expert auto repair and maintenance services."
+    },
+    {
+        "name": "Hamilton Florist",
+        "address": "303 Flower Rd, Hamilton, Waikato, NZ",
+        "phone": "+64 7 678 9012",
+        "website": "http://hamiltonflorist.co.nz",
+        "image": "hamilton_florist.png",
+        "membership_level": 1,
+        "description": "Beautiful floral arrangements for all occasions."
+    },
+
+    {
+        "name": "Waikato Legal Services",
+        "address": "404 Justice Ln, Hamilton, Waikato, NZ",
+        "phone": "+64 7 789 0123",
+        "website": "http://waikatolegal.co.nz",
+        "image": "waikato_legal.png",
+        "membership_level": 2,
+        "description": "Professional legal advice and representation."
+    }
+]
