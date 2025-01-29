@@ -99,6 +99,28 @@ nav a:hover {
     border-radius: 5px;
 }
 
+dialog {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 5px 1px lightgray;
+    width: 80%;
+    max-width: 500px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+}
+
 @media (max-width: 768px) {
     nav ul {
         display: none;

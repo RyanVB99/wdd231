@@ -86,20 +86,20 @@ function displayCourses(coursesToDisplay) {
     coursesToDisplay.forEach(course => {
         const courseDiv = document.createElement('div');
         courseDiv.classList.add('course-box');
-        
+
         if (course.completed) {
             courseDiv.classList.add('completed');
         } else {
             totalCreditsNeeded += course.credits;
         }
-        
+
         const courseTitle = document.createElement('p');
         courseTitle.textContent = `${course.subject} ${course.number}`;
         courseDiv.appendChild(courseTitle);
-        
+
         coursesSection.appendChild(courseDiv);
     });
-    
+
     if (totalCreditsNeeded > 0) {
         const creditsNeeded = document.createElement('p');
         creditsNeeded.textContent = `Total Credits needed: ${totalCreditsNeeded}`;
@@ -107,45 +107,66 @@ function displayCourses(coursesToDisplay) {
     }
 }
 
-const allCoursesButton = document.querySelector('.all');
-const wddCoursesButton = document.querySelector('.wdd');
-const cseCoursesButton = document.querySelector('.cse');
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌<button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+        `;
+    courseDetails.showModal();
 
-allCoursesButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    displayCourses(courses);
-    console.log('All courses displayed');
-});
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
 
-wddCoursesButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    const wddCourses = courses.filter(course => course.subject === 'WDD');
-    displayCourses(wddCourses);
-    console.log('WDD courses displayed');
-});
-
-cseCoursesButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    const cseCourses = courses.filter(course => course.subject === 'CSE');
-    displayCourses(cseCourses);
-    console.log('CSE courses displayed');
-});
+// courseDiv.addEventListener('click', () => {
+//     displayCourseDetails(courses);
+// });
 
 document.addEventListener('DOMContentLoaded', () => {
     displayCourses(courses);
 
-    document.querySelectorAll('.filter-button').forEach(button => {
-        button.addEventListener('click', (event) => {
-            const filter = event.target.dataset.filter;
-            displayCourses(filter === 'All' ? courses : courses.filter(course => course.subject === filter));
-        });
-    });
-
+    const allCoursesButton = document.querySelector('.all');
+    const wddCoursesButton = document.querySelector('.wdd');
+    const cseCoursesButton = document.querySelector('.cse');
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('nav ul');
 
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
+    if (allCoursesButton) {
+        allCoursesButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            displayCourses(courses);
+            console.log('All courses displayed');
+        });
+    }
 
+    if (wddCoursesButton) {
+        wddCoursesButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            const wddCourses = courses.filter(course => course.subject === 'WDD');
+            displayCourses(wddCourses);
+            console.log('WDD courses displayed');
+        });
+    }
+
+    if (cseCoursesButton) {
+        cseCoursesButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            const cseCourses = courses.filter(course => course.subject === 'CSE');
+            displayCourses(cseCourses);
+            console.log('CSE courses displayed');
+        });
+    }
+
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
 });

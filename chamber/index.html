@@ -8,7 +8,6 @@
     <meta name="description" content="WDD 231 - Dynamic Web Fundamentals - Ryan Bodily - Chamber">
     <meta name="author" content="Ryan Bodily">
 
-    <!-- Facebook Meta Tags -->
     <meta property="og:title" content="WDD 231 - Dynamic Web Fundamentals - Ryan Bodily">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://ryanvb99.github.io/wdd231/images/takapuna_portrait.webp">
@@ -19,6 +18,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/mobile_navbar.js"></script>
     <script src="scripts/business_spotlight.js"></script>
+    <script src="scripts/weather.js" defer></script>
     <title>Waikato Chamber of Commerce</title>
 </head>
 
@@ -47,24 +47,38 @@
     <div class="hero-image">
         <img src="./images/waikato_hero.webp" alt="Hero Image">
     </div>
+    <div class="call-to-action">
+        <h2>Join the Waikato Chamber of Commerce</h2>
+        <p>Join the Waikato Chamber of Commerce and get access to exclusive events, networking opportunities, and more.
+        </p>
+        <a href="join.html" class="cta-button">Join Now</a>
+    </div>
     <h2>Home</h2>
     <div class="cards-container">
         <div class="card">
             <h3>Events</h3>
+            <ul>
+                <li>3/15/2025 - Business Networking Breakfast</li>
+                <li>4/20/2025 - Annual General Meeting</li>
+                <li>5/10/2025 - Chamber Gala Dinner</li>
+            </ul>
         </div>
         <div class="card">
             <h3>Current Weather</h3>
-            <p>Details about the current weather.</p>
+            <p>The current temperature in Hamilton, New Zealand is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
         </div>
         <div class="card">
             <h3>Weather Forecast</h3>
-            <p>Details about the weather forecast.</p>
+            <div id="forecast-container"></div>
         </div>
-    </div>  
+    </div>
 
     <h2>Business Spotlights</h2>
-    <div class="cards-container" id="business-spotlight">
-    </div>
+    <div class="cards-container" id="business-spotlight"></div>
 
     <footer>
         <div class="cards-container">
@@ -84,7 +98,6 @@
                 <p>Ryan Bodily</p>
                 <p>&copy; 2024 Waikato Chamber of Commerce</p>
                 <p id="lastModified"></p>
-
             </section>
         </div>
     </footer>

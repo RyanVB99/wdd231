@@ -104,6 +104,34 @@ a {
     box-sizing: border-box;
 }
 
+.business-card {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    text-align: center;
+    border: 1px solid black;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.business-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.business-card a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+.business-card a:hover {
+    text-decoration: underline;
+}
+
 .list-container {
     display: block;
     width: 100%;
@@ -143,6 +171,40 @@ footer {
     color: #fff;
     text-align: center;
     padding: 5px;
+}
+
+.call-to-action {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.call-to-action h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
 }
 
 @media screen and (max-width: 768px) {
