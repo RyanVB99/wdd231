@@ -1,45 +1,49 @@
 body {
-    color: steelblue;
+    color: #2a4d7a;
 }
 
 a {
-    color: steelblue;
+    color: #2a4d7a;
     text-decoration: none;
 }
 
-.navbar {
-    background-color: #333;
-    overflow: hidden;
+a:hover {
+    text-decoration: underline;
 }
 
-.navbar-container {
+.navbar, .mobile-menu, footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-container, .cards-container, footer .cards-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 14px 20px;
 }
 
+.navbar-logo, .navbar-item, .mobile-menu-item {
+    text-decoration: none;
+    padding: 14px 20px;
+    color: #fff;
+}
+
 .navbar-logo {
     text-decoration: none;
     font-size: 24px;
+    color: #fff;
 }
 
-.navbar-menu {
-    display: flex;
-    gap: 20px;
-}
-
-.navbar-item {
-    text-decoration: none;
-    padding: 14px 20px;
-}
-
-.navbar-item:hover {
+.navbar-item:hover, .mobile-menu-item:hover {
     background-color: #575757;
 }
 
-.navbar-toggle {
+.navbar-toggle, .mobile-menu {
     display: none;
+}
+
+.navbar-toggle {
     flex-direction: column;
     cursor: pointer;
     font-size: 30px;
@@ -53,9 +57,7 @@ a {
 }
 
 .mobile-menu {
-    display: flex;
     flex-direction: column;
-    background-color: #333;
     position: absolute;
     top: 60px;
     width: 100%;
@@ -69,14 +71,10 @@ a {
     max-height: 300px;
 }
 
-.mobile-menu-item {
-    text-decoration: none;
-    padding: 14px 20px;
-    border-bottom: 1px solid #575757;
-}
-
-.mobile-menu-item:hover {
-    background-color: #575757;
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .hero-image img {
@@ -84,27 +82,39 @@ a {
     height: auto;
 }
 
+.call-to-action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #004494;
+}
+
 .cards-container {
-    display: flex;
     justify-content: space-around;
     padding: 20px;
     flex-wrap: wrap;
 }
 
-.card {
-    background-color: #fff;
-    color: #333;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(33.333% - 20px);
-    text-align: center;
-    border: 1px solid black;
-    margin: 10px;
-    box-sizing: border-box;
-}
-
-.business-card {
+.card, .business-card, .list-item {
     background-color: #fff;
     color: #333;
     padding: 20px;
@@ -121,15 +131,6 @@ a {
     max-width: 100px;
     height: auto;
     margin-bottom: 10px;
-}
-
-.business-card a {
-    color: steelblue;
-    text-decoration: none;
-}
-
-.business-card a:hover {
-    text-decoration: underline;
 }
 
 .list-container {
@@ -154,61 +155,12 @@ a {
     color: #fff;
 }
 
-.list-item {
-    background-color: #fff;
-    color: #333;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    text-align: left;
-    border: 1px solid black;
-    margin: 10px 0;
-}
-
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
     padding: 5px;
 }
 
-.call-to-action {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-.call-to-action h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.call-to-action p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #0056b3;
-}
-
 @media screen and (max-width: 768px) {
-
     .navbar-menu-content {
         display: block;
         text-align: center;

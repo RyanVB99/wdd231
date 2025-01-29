@@ -43,7 +43,7 @@ async function fetchForecast() {
 }
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}°C`;
+    currentTemp.innerHTML = `${data.main.temp}°F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     if (data.weather[0].icon) {
