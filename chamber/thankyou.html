@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles/commerce.css">
+</head>
+<body>
+    <h1>Thank You for Joining!</h1>
+    <p>First Name: <span id="first-name"></span></p>
+    <p>Last Name: <span id="last-name"></span></p>
+    <p>Email: <span id="email"></span></p>
+    <p>Mobile Phone Number: <span id="phone"></span></p>
+    <p>Business/Organization Name: <span id="organization"></span></p>
+    <p>Submission Date: <span id="timestamp"></span></p>
+
+    <script>
+        function formatTimestamp(timestamp) {
+            const date = new Date(timestamp);
+            return date.toLocaleString();
+        }
+
+        document.getElementById('first-name').textContent = new URLSearchParams(window.location.search).get('first-name');
+        document.getElementById('last-name').textContent = new URLSearchParams(window.location.search).get('last-name');
+        document.getElementById('email').textContent = new URLSearchParams(window.location.search).get('email');
+        document.getElementById('phone').textContent = new URLSearchParams(window.location.search).get('phone');
+        document.getElementById('organization').textContent = new URLSearchParams(window.location.search).get('organization');
+        const timestamp = new URLSearchParams(window.location.search).get('timestamp');
+        document.getElementById('timestamp').textContent = formatTimestamp(timestamp);
+    </script>
+</body>
+</html>
