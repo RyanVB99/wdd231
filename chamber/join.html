@@ -14,7 +14,6 @@
     <meta property="og:url" content="https://ryanvb99.github.io/wdd231/chamber/directory.html">
 
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/commerce.css">
     <script src="scripts/getdates.js"></script>
     <script src="scripts/mobile_navbar.js"></script>
@@ -23,23 +22,21 @@
 </head>
 
 <body>
-    <header>
-        <h1>Waikato Chamber of Commerce</h1>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <a href="index.html" class="navbar-logo">Logo</a>
-                <div class="navbar-menu">
-                    <a href="index.html" class="navbar-item">Home</a>
-                    <a href="directory.html" class="navbar-item">Directory</a>
-                    <a href="join.html" class="navbar-item">Join</a>
-                    <a href="discover.html" class="navbar-item">Discover</a>
-                </div>
-                <div class="navbar-toggle" id="mobile-menu">
-                    ☰
-                </div>
+    <h1>Waikato Chamber of Commerce</h1>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Logo</a>
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-item">Home</a>
+                <a href="directory.html" class="navbar-item">Directory</a>
+                <a href="join.html" class="navbar-item">Join</a>
+                <a href="discover.html" class="navbar-item">Discover</a>
             </div>
-        </nav>
-    </header>
+            <div class="navbar-toggle" id="mobile-menu">
+                ☰
+            </div>
+        </div>
+    </nav>
     <div class="mobile-menu" id="mobile-menu-content">
         <a href="index.html" class="mobile-menu-item">Home</a>
         <a href="directory.html" class="mobile-menu-item">Directory</a>
@@ -50,66 +47,61 @@
         <img src="./images/waikato_hero.webp" alt="Hero Image">
     </div>
     
-    
-    <div class="main-container">
-        <div class="form-container">
-            <h3> Join Now </h3>
-            <form method="get" action="thankyou.html">
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" required title="First Name" autocomplete="given-name">
-                
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" required title="Last Name" autocomplete="family-name">
-                
-                <label for="organization-title">Organizational Title:</label>
-                <input type="text" id="organization-title" name="organization-title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required title="Email" autocomplete="email" placeholder="example@example.com">
-                
-                <label for="phone">Mobile Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required title="Mobile Phone Number" autocomplete="tel">
-                
-                <label for="organization">Business/Organization Name:</label>
-                <input type="text" id="organization" name="organization" required title="Organization" autocomplete="organization">
-                
-                <label for="membership-level">Membership Level:</label>
-                <select id="membership-level" name="membership-level" title="Membership Level">
-                    <option value="np">NP Membership (Non-Profit)</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-                
-                <label for="description">Business/Organization Description:</label>
-                <textarea id="description" name="description" title="Business/Organization Description"></textarea>
-                
-                <input type="hidden" id="timestamp" name="timestamp" value="">
-                
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+    <div class="form-container">
+        <form method="get" action="thankyou.html">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required title="First Name" autocomplete="given-name">
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required title="Last Name" autocomplete="family-name">
+            
+            <label for="organization-title">Organizational Title:</label>
+            <input type="text" id="organization-title" name="organization-title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required title="Email" autocomplete="email" placeholder="example@example.com">
+            
+            <label for="phone">Mobile Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required title="Mobile Phone Number" autocomplete="tel">
+            
+            <label for="organization">Business/Organization Name:</label>
+            <input type="text" id="organization" name="organization" required title="Organization" autocomplete="organization">
+            
+            <label for="membership-level">Membership Level:</label>
+            <select id="membership-level" name="membership-level" title="Membership Level">
+                <option value="np">NP Membership (Non-Profit)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+            
+            <label for="description">Business/Organization Description:</label>
+            <textarea id="description" name="description" title="Business/Organization Description"></textarea>
+            
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 
-        <div class="membership-section">
-            <h3>Membership Levels</h3>
-            <div class="membership-cards-container">
-                <div class="card">
-                    <h3>NP Membership</h3>
-                    <a href="#np-modal" class="modal-link">More Info</a>
-                </div>
-                <div class="card">
-                    <h3>Bronze Membership</h3>
-                    <a href="#bronze-modal" class="modal-link">More Info</a>
-                </div>
-                <div class="card">
-                    <h3>Silver Membership</h3>
-                    <a href="#silver-modal" class="modal-link">More Info</a>
-                </div>
-                <div class="card">
-                    <h3>Gold Membership</h3>
-                    <a href="#gold-modal" class="modal-link">More Info</a>
-                </div>
-            </div>
+    <h3>Membership Levels</h3>
+
+    <div class="membership-cards-container">
+        <div class="card">
+            <h3>NP Membership</h3>
+            <a href="#np-modal" class="modal-link">More Info</a>
+        </div>
+        <div class="card">
+            <h3>Bronze Membership</h3>
+            <a href="#bronze-modal" class="modal-link">More Info</a>
+        </div>
+        <div class="card">
+            <h3>Silver Membership</h3>
+            <a href="#silver-modal" class="modal-link">More Info</a>
+        </div>
+        <div class="card">
+            <h3>Gold Membership</h3>
+            <a href="#gold-modal" class="modal-link">More Info</a>
         </div>
     </div>
 

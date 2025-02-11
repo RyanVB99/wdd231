@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="WDD 231 - Dynamic Web Fundamentals - Ryan Bodily">
+    <meta name="description" content="WDD 231 - Dynamic Web Fundamentals - Ryan Bodily - Chamber">
+    <meta name="author" content="Ryan Bodily">
+
+    <meta property="og:title" content="WDD 231 - Dynamic Web Fundamentals - Ryan Bodily">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ryanvb99.github.io/wdd231/images/takapuna_portrait.webp">
+    <meta property="og:url" content="https://ryanvb99.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/commerce_discover.css">
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/mobile_navbar.js"></script>
+    <script src="scripts/localstorage.js"></script>
+    <script src="scripts/weather.js" defer></script>
+    <title>Waikato Chamber of Commerce</title>
+</head>
+
+<body>
+    <h1>Waikato Chamber of Commerce</h1>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Logo</a>
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-item">Home</a>
+                <a href="directory.html" class="navbar-item">Directory</a>
+                <a href="join.html" class="navbar-item">Join</a>
+                <a href="discover.html" class="navbar-item">Discover</a>
+            </div>
+            <div class="navbar-toggle" id="mobile-menu">
+                ☰
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu-content">
+        <a href="index.html" class="mobile-menu-item">Home</a>
+        <a href="directory.html" class="mobile-menu-item">Directory</a>
+        <a href="join.html" class="mobile-menu-item">Join</a>
+        <a href="discover.html" class="mobile-menu-item">Discover</a>
+    </div>
+    <div class="hero-image">
+        <img src="./images/waikato_hero.webp" alt="Hero Image">
+        <div class="call-to-action">
+            <h2>Join the Waikato Chamber of Commerce</h2>
+            <p>Join the Waikato Chamber of Commerce and get access to exclusive events, networking opportunities, and more.</p>
+            <a href="join.html" class="cta-button">Join Now</a>
+        </div>
+    </div>
+
+    <h2>Discover</h2>
+    
+    <div class="cards-container">
+        <div class="card">
+            <h2>Location 1</h2>
+            <figure>
+                <img src="./images/location1.webp" alt="Location 1">
+            </figure>
+            <address>123 Main St, Hamilton, Waikato</address>
+            <p>Description of Location 1.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Location 2</h2>
+            <figure>
+                <img src="./images/location2.webp" alt="Location 2">
+            </figure>
+            <address>456 Elm St, Hamilton, Waikato</address>
+            <p>Description of Location 2.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Location 3</h2>
+            <figure>
+                <img src="./images/location3.webp" alt="Location 3">
+            </figure>
+            <address>789 Oak St, Hamilton, Waikato</address>
+            <p>Description of Location 3.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Location 4</h2>
+            <figure>
+                <img src="./images/location4.webp" alt="Location 4">
+            </figure>
+            <address>101 Pine St, Hamilton, Waikato</address>
+            <p>Description of Location 4.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Location 5</h2>
+            <figure>
+                <img src="./images/location5.webp" alt="Location 5">
+            </figure>
+            <address>202 Maple St, Hamilton, Waikato</address>
+            <p>Description of Location 5.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Location 6</h2>
+            <figure>
+                <img src="./images/location6.webp" alt="Location 6">
+            </figure>
+            <address>303 Birch St, Hamilton, Waikato</address>
+            <p>Description of Location 6.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Location 7</h2>
+            <figure>
+                <img src="./images/location7.webp" alt="Location 7">
+            </figure>
+            <address>404 Cedar St, Hamilton, Waikato</address>
+            <p>Description of Location 7.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Location 8</h2>
+            <figure>
+                <img src="./images/location8.webp" alt="Location 8">
+            </figure>
+            <address>505 Spruce St, Hamilton, Waikato</address>
+            <p>Description of Location 8.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="cards-container">
+            <section>
+                <p>Waikato Chamber of Commerce</p>
+                <p>Hamilton, Waikato</p>
+                <p>info@waikato.com</p>
+                <p>999-888-7777</p>
+            </section>
+            <section>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+            </section>
+            <section>
+                <p>WDD231 Class Project</p>
+                <p>Ryan Bodily</p>
+                <p>&copy; 2024 Waikato Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </section>
+        </div>
+    </footer>
+    <script src="scripts/localstorage.js"></script>
+</body>
+
+</html>
