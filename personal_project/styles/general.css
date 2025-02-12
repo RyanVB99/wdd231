@@ -1,0 +1,159 @@
+:root {
+    --font-color: #1e1e24ff;
+    --background-color: #e3dac9;
+    --accent-2: #eaa578;
+    --accent-1: #431256;
+    --accent-3: #be7e53;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: 'Cormorant', serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--accent-2);
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 5px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--font-color);
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: var(--accent-1);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: var(--accent-2);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+section h2 {
+    color: var(--accent-2);
+}
+
+#hero-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #431256b3;
+    color: var(--background-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.hero-text h2,
+.hero-text p {
+    margin: 0;
+}
+
+.hero-text .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px 40px;
+    background-color: var(--accent-2);
+    color: var(--font-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.hero-text .btn:hover {
+    background-color: var(--accent-3);
+}
+
+#content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+#menu,
+#reservations {
+    padding: 20px;
+    background-color: var(--background-color);
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.grid-btn {
+    text-decoration: none;
+    color: inherit;
+    margin: 2.5rem;
+    padding: 1rem;
+}
+
+.grid-btn:hover #menu,
+.grid-btn:hover #reservations {
+    background-color: var(--accent-1);
+    color: var(--background-color);
+    transform: scale(1.025);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

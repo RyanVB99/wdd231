@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/reservation.js"></script>
+    <title>Per Se - Reservations</title>
+</head>
+
+<body>
+    <header>
+        <h1>Per Se</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="reservations">
+            <h2>Reservations</h2>
+            <p>Check our availability and make a reservation to enjoy a memorable dining experience.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+                <button type="submit">Make Reservation</button>
+            </form>
+            <!-- Embed the Google Calendar widget here -->
+            <div id="google-calendar">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=cnlhbnZib2RpbHlAZ21haWwuY29t&src=NzM1NDM3Y2RlYjhmNjFlZGY2YTA2Y2YyZjY2NzFjYjU3OTkwNzFkZWE0YTMxYmI1YmVjN2ZlM2EyYzM4YzRlZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZmFtaWx5MTQ3MTAwNDg0MTE0NDY5MTY4ODdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%23AD1457&color=%23B39DDB&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Per Se. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

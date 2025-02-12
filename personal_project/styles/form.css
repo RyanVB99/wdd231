@@ -1,0 +1,33 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
+    color: var(--font-color);
+}
+
+form input,
+form button {
+    padding: 10px;
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    font-family: 'Cormorant', serif;
+    font-size: 1em;
+}
+
+form button {
+    background-color: var(--accent-2);
+    color: var(--background-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--accent-3);
+}
