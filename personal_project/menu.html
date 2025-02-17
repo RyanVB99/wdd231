@@ -9,6 +9,8 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/general.css">
+    <script src="scripts/mobile-nav.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
     <title>Per Se - Menu</title>
 </head>
 
@@ -16,8 +18,15 @@
     <header>
         <h1>Per Se</h1>
         <nav>
-            <ul>
+            <ul class="desktop-nav">
                 <li><a href="index.html#about">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+            <button class="hamburger-btn" aria-label="Open navigation menu">
+                &#9776;
+            </button>
+            <ul class="mobile-nav">
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
             </ul>
@@ -27,12 +36,14 @@
         <section id="menu">
             <h2>Menu</h2>
             <p>Explore the variety of foods we offer, crafted to provide an exceptional dining experience.</p>
-            <ul>
-                <li>Appetizers</li>
-                <li>Main Courses</li>
-                <li>Desserts</li>
-                <li>Beverages</li>
-            </ul>
+            <div id="filter-buttons">
+                <button class="filter-btn" data-category="all">All</button>
+                <button class="filter-btn" data-category="appetizers">Appetizers</button>
+                <button class="filter-btn" data-category="main_courses">Main Courses</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+                <button class="filter-btn" data-category="beverages">Beverages</button>
+            </div>
+            <div id="menu-container" class="grid-container"></div>
         </section>
     </main>
     <footer>

@@ -1,0 +1,120 @@
+{
+    "menu": {
+        "appetizers": [
+            {
+                "name": "Escargots de Bourgogne",
+                "description": "Snails in garlic herb butter",
+                "price": 12.50,
+                "allergens": ["dairy", "shellfish"],
+                "vegetarian": false,
+                "gluten_free": true,
+                "contains_lactose": true
+            },
+            {
+                "name": "Foie Gras",
+                "description": "Duck liver pâté with fig jam",
+                "price": 18.00,
+                "allergens": ["none"],
+                "vegetarian": false,
+                "gluten_free": true,
+                "contains_lactose": false
+            },
+            {
+                "name": "Soupe à l'Oignon",
+                "description": "Classic French onion soup with Gruyère cheese",
+                "price": 9.00,
+                "allergens": ["dairy", "gluten"],
+                "vegetarian": true,
+                "gluten_free": false,
+                "contains_lactose": true
+            }
+        ],
+        "main_courses": [
+            {
+                "name": "Coq au Vin",
+                "description": "Chicken braised in red wine with mushrooms and pearl onions",
+                "price": 25.00,
+                "allergens": ["none"],
+                "vegetarian": false,
+                "gluten_free": true,
+                "contains_lactose": false
+            },
+            {
+                "name": "Boeuf Bourguignon",
+                "description": "Beef stew in red wine with carrots, onions, and mushrooms",
+                "price": 28.00,
+                "allergens": ["none"],
+                "vegetarian": false,
+                "gluten_free": true,
+                "contains_lactose": false
+            },
+            {
+                "name": "Ratatouille",
+                "description": "Provençal vegetable medley with tomatoes, zucchini, and eggplant",
+                "price": 20.00,
+                "allergens": ["none"],
+                "vegetarian": true,
+                "gluten_free": true,
+                "contains_lactose": false
+            }
+        ],
+        "desserts": [
+            {
+                "name": "Crème Brûlée",
+                "description": "Vanilla custard with a caramelized sugar crust",
+                "price": 8.00,
+                "allergens": ["dairy", "eggs"],
+                "vegetarian": true,
+                "gluten_free": true,
+                "contains_lactose": true
+            },
+            {
+                "name": "Tarte Tatin",
+                "description": "Upside-down caramelized apple tart",
+                "price": 9.50,
+                "allergens": ["gluten", "dairy"],
+                "vegetarian": true,
+                "gluten_free": false,
+                "contains_lactose": true
+            },
+            {
+                "name": "Mousse au Chocolat",
+                "description": "Rich chocolate mousse with a hint of espresso",
+                "price": 7.50,
+                "allergens": ["dairy"],
+                "vegetarian": true,
+                "gluten_free": true,
+                "contains_lactose": true
+            }
+        ],
+        "beverages": [
+            {
+                "name": "Champagne",
+                "description": "Sparkling wine from the Champagne region",
+                "price": 15.00,
+                "allergens": ["none"],
+                "vegetarian": true,
+                "gluten_free": true,
+                "contains_lactose": false
+            },
+            {
+                "name": "Bordeaux",
+                "description": "Red wine from the Bordeaux region",
+                "price": 12.00,
+                "allergens": ["none"],
+                "vegetarian": true,
+                "gluten_free": true,
+                "contains_lactose": false
+            },
+            {
+                "name": "Café au Lait",
+                "description": "Coffee with steamed milk",
+                "price": 4.00,
+                "allergens": ["dairy"],
+                "vegetarian": true,
+                "gluten_free": true,
+                "contains_lactose": true
+            }
+        ]
+    }
+}

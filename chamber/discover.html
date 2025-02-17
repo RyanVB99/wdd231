@@ -48,85 +48,163 @@
         <img src="./images/waikato_hero.webp" alt="Hero Image">
         <div class="call-to-action">
             <h2>Join the Waikato Chamber of Commerce</h2>
-            <p>Join the Waikato Chamber of Commerce and get access to exclusive events, networking opportunities, and more.</p>
+            <p>Join the Waikato Chamber of Commerce and get access to exclusive events, networking opportunities, and
+                more.</p>
             <a href="join.html" class="cta-button">Join Now</a>
         </div>
     </div>
 
+    <div class="new-call-to-action">
+        <h2>Join the Waikato Chamber of Commerce</h2>
+        <p>Join the Waikato Chamber of Commerce and get access to exclusive events, networking opportunities, and more.
+        </p>
+        <a href="join.html" class="cta-button">Join Now</a>
+    </div>
+
     <h2>Discover</h2>
-    
+
     <div class="cards-container">
         <div class="card">
-            <h2>Location 1</h2>
+            <h2>Hamilton Gardens</h2>
             <figure>
-                <img src="./images/location1.webp" alt="Location 1">
+                <img src="./images/hamilton_gardens.webp" alt="Hamilton Gardens">
             </figure>
-            <address>123 Main St, Hamilton, Waikato</address>
-            <p>Description of Location 1.</p>
-            <button>Learn More</button>
+            <address>Hungerford Crescent, Hamilton, Waikato</address>
+            <p>A beautiful public garden with themed gardens and events.</p>
+            <button onclick="openModal('modal1')">Learn More</button>
         </div>
         <div class="card">
-            <h2>Location 2</h2>
+            <h2>Waikato Museum</h2>
             <figure>
-                <img src="./images/location2.webp" alt="Location 2">
+                <img src="./images/waikato_museum.webp" alt="Waikato Museum">
             </figure>
-            <address>456 Elm St, Hamilton, Waikato</address>
-            <p>Description of Location 2.</p>
-            <button>Learn More</button>
+            <address>1 Grantham Street, Hamilton, Waikato</address>
+            <p>Explore the rich history and culture of the Waikato region.</p>
+            <button onclick="openModal('modal2')">Learn More</button>
         </div>
         <div class="card">
-            <h2>Location 3</h2>
+            <h2>Hamilton Zoo</h2>
             <figure>
-                <img src="./images/location3.webp" alt="Location 3">
+                <img src="./images/hamilton_zoo.webp" alt="Hamilton Zoo">
             </figure>
-            <address>789 Oak St, Hamilton, Waikato</address>
-            <p>Description of Location 3.</p>
-            <button>Learn More</button>
+            <address>183 Brymer Road, Hamilton, Waikato</address>
+            <p>Home to over 600 native and exotic animals.</p>
+            <button onclick="openModal('modal3')">Learn More</button>
         </div>
         <div class="card">
-            <h2>Location 4</h2>
+            <h2>Lake Rotoroa</h2>
             <figure>
-                <img src="./images/location4.webp" alt="Location 4">
+                <img src="./images/lake_rotoroa.webp" alt="Lake Rotoroa">
             </figure>
-            <address>101 Pine St, Hamilton, Waikato</address>
-            <p>Description of Location 4.</p>
-            <button>Learn More</button>
+            <address>Innes Common, Hamilton, Waikato</address>
+            <p>A scenic lake with walking tracks and recreational activities.</p>
+            <button onclick="openModal('modal4')">Learn More</button>
         </div>
         <div class="card">
-            <h2>Location 5</h2>
+            <h2>Hamilton Central Library</h2>
             <figure>
-                <img src="./images/location5.webp" alt="Location 5">
+                <img src="./images/hamilton_central_library.webp" alt="Hamilton Central Library">
             </figure>
-            <address>202 Maple St, Hamilton, Waikato</address>
-            <p>Description of Location 5.</p>
-            <button>Learn More</button>
+            <address>Garden Place, Hamilton, Waikato</address>
+            <p>A modern library with a wide range of resources and events.</p>
+            <button onclick="openModal('modal5')">Learn More</button>
         </div>
         <div class="card">
-            <h2>Location 6</h2>
+            <h2>Hamilton Lake Domain</h2>
             <figure>
-                <img src="./images/location6.webp" alt="Location 6">
+                <img src="./images/hamilton_lake_domain.webp" alt="Hamilton Lake Domain">
             </figure>
-            <address>303 Birch St, Hamilton, Waikato</address>
-            <p>Description of Location 6.</p>
-            <button>Learn More</button>
+            <address>Lake Crescent, Hamilton, Waikato</address>
+            <p>A popular spot for picnics, walking, and bird watching.</p>
+            <button onclick="openModal('modal6')">Learn More</button>
         </div>
         <div class="card">
-            <h2>Location 7</h2>
+            <h2>Claudelands Arena</h2>
             <figure>
-                <img src="./images/location7.webp" alt="Location 7">
+                <img src="./images/claudelands.webp" alt="Claudelands Arena">
             </figure>
-            <address>404 Cedar St, Hamilton, Waikato</address>
-            <p>Description of Location 7.</p>
-            <button>Learn More</button>
+            <address>Corner of Brooklyn Road and Heaphy Terrace, Hamilton, Waikato</address>
+            <p>A premier venue for concerts, events, and exhibitions.</p>
+            <button onclick="openModal('modal7')">Learn More</button>
         </div>
         <div class="card">
-            <h2>Location 8</h2>
+            <h2>Hamilton New Zealand Temple</h2>
             <figure>
-                <img src="./images/location8.webp" alt="Location 8">
+                <img src="./images/temple.webp" alt="Hamilton New Zealand Temple">
             </figure>
-            <address>505 Spruce St, Hamilton, Waikato</address>
-            <p>Description of Location 8.</p>
-            <button>Learn More</button>
+            <address>509 Tuhikaramea Road, Temple View, Hamilton, Waikato</address>
+            <p>The Hamilton New Zealand Temple is a temple of The Church of Jesus Christ of Latter-day Saints.</p>
+            <button onclick="openModal('modal8')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Hamilton Gardens</h2>
+            <p>Hamilton Gardens is a public garden in the south of Hamilton owned and managed by the Hamilton City
+                Council. It is the most popular visitor attraction in the Waikato region, attracting more than one
+                million visitors each year.</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Waikato Museum</h2>
+            <p>Waikato Museum Te Whare Taonga o Waikato is a regional museum located in Hamilton, New Zealand. The
+                museum focuses on the art, history, and culture of the Waikato region.</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Hamilton Zoo</h2>
+            <p>Hamilton Zoo is the main zoological garden of Hamilton, New Zealand. It is located on Brymer Road in the
+                Hamilton suburb of Rotokauri, on the western outskirts of the city.</p>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Lake Rotoroa</h2>
+            <p>Lake Rotoroa, also known as Hamilton Lake, is a lake in Hamilton, New Zealand. It is located to the west
+                of the city center, and is a popular spot for walking, picnicking, and bird watching.</p>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Hamilton Central Library</h2>
+            <p>Hamilton Central Library is the main library in Hamilton, New Zealand. It offers a wide range of
+                resources, including books, magazines, DVDs, and digital resources, as well as events and programs for
+                all ages.</p>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Hamilton Lake Domain</h2>
+            <p>Hamilton Lake Domain is a popular recreational area in Hamilton, New Zealand. It features a large lake,
+                walking tracks, playgrounds, and picnic areas, making it a great spot for families and outdoor
+                enthusiasts.</p>
+        </div>
+    </div>
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <h2>Claudelands Arena</h2>
+            <p>Claudelands Arena is a premier venue in Hamilton, New Zealand, hosting concerts, events, and exhibitions.
+                It is located at the corner of Brooklyn Road and Heaphy Terrace.</p>
+        </div>
+    </div>
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <h2>Hamilton New Zealand Temple</h2>
+            <p>The Hamilton New Zealand Temple is a temple of The Church of Jesus Christ of Latter-day Saints. It was
+                the first temple built in the Southern Hemisphere and serves members of the church in New Zealand and
+                the surrounding areas.</p>
         </div>
     </div>
 
@@ -152,6 +230,7 @@
         </div>
     </footer>
     <script src="scripts/localstorage.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 
 </html>

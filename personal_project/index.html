@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/general.css">
+    <script src="scripts/mobile-nav.js" defer></script>
     <title>Per Se</title>
 </head>
 
@@ -16,7 +17,15 @@
     <header>
         <h1>Per Se</h1>
         <nav>
-            <ul>
+            <ul class="desktop-nav">
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+            <button class="hamburger-btn" aria-label="Open navigation menu">
+                &#9776;
+            </button>
+            <ul class="mobile-nav">
                 <li><a href="index.html#about">About Us</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
@@ -32,7 +41,7 @@
             </div>
             <img src="images/HorsDouevreClose.webp" alt="Hors d'oeuvre">
         </section>
-        <section id="about">
+        <section id="about" class="hide-on-mobile">
             <h2>About Us</h2>
             <p>Welcome to Per Se, a hypothetical restaurant where we showcase our services and allow customers to view
                 availability and make reservations.</p>
