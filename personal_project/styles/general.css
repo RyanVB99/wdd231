@@ -6,6 +6,10 @@
     --accent-3: #be7e53;
 }
 
+.active-page {
+    text-decoration: underline;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--font-color);
@@ -74,6 +78,8 @@ nav ul li a:hover {
     font-size: 2em;
     color: var(--background-color);
     cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .mobile-nav {
@@ -251,7 +257,13 @@ section h2 {
     }
 }
 
-@media (max-width: 320px) {
+#about {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+@media (max-width: 400px) {
     .desktop-nav {
         display: none;
     }
@@ -261,8 +273,7 @@ section h2 {
     }
 
     .hero-text {
-        font-size: 1.5em;
-        padding: 10px;
+        display: none;
     }
 
     .hero-text .btn {
@@ -279,8 +290,6 @@ section h2 {
         margin: 1rem;
         padding: 0.5rem;
     }
-
-
 
     main {
         text-align: center;
