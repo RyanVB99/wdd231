@@ -296,12 +296,25 @@ footer {
 }
 
 .cards-container figure img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards-container figure:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cards-container figure img {
     transition: none;
 }
 
 .cards-container figure:hover img {
     transform: none;
     filter: none;
+}
+
+.active-page {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
@@ -364,6 +377,13 @@ footer {
 
     .new-call-to-action {
         display: block;
+        background-color: rgba(201, 214, 195, 0.5);
+    }
+
+    .navbar,
+    .mobile-menu,
+    footer {
+        background-color: #555;
     }
 }
 
@@ -496,5 +516,14 @@ footer {
 
     .card:nth-child(8) {
         grid-area: card8;
+    }
+
+    .cards-container figure img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cards-container figure:hover img {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 }

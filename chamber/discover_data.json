@@ -1,0 +1,60 @@
+{
+    "locations": [
+        {
+            "title": "Hamilton Gardens",
+            "image": "./images/hamilton_gardens.webp",
+            "address": "Hungerford Crescent, Hamilton, Waikato",
+            "description": "A beautiful public garden with themed gardens and events.",
+            "modalContent": "Hamilton Gardens is a public garden in the south of Hamilton owned and managed by the Hamilton City Council. It is the most popular visitor attraction in the Waikato region, attracting more than one million visitors each year."
+        },
+        {
+            "title": "Waikato Museum",
+            "image": "./images/waikato_museum.webp",
+            "address": "1 Grantham Street, Hamilton, Waikato",
+            "description": "Explore the rich history and culture of the Waikato region.",
+            "modalContent": "Waikato Museum Te Whare Taonga o Waikato is a regional museum located in Hamilton, New Zealand. The museum focuses on the art, history, and culture of the Waikato region."
+        },
+        {
+            "title": "Hamilton Zoo",
+            "image": "./images/hamilton_zoo.webp",
+            "address": "183 Brymer Road, Hamilton, Waikato",
+            "description": "Home to over 600 native and exotic animals.",
+            "modalContent": "Hamilton Zoo is the main zoological garden of Hamilton, New Zealand. It is located on Brymer Road in the Hamilton suburb of Rotokauri, on the western outskirts of the city."
+        },
+        {
+            "title": "Lake Rotoroa",
+            "image": "./images/lake_rotoroa.webp",
+            "address": "Innes Common, Hamilton, Waikato",
+            "description": "A scenic lake with walking tracks and recreational activities.",
+            "modalContent": "Lake Rotoroa, also known as Hamilton Lake, is a lake in Hamilton, New Zealand. It is located to the west of the city center, and is a popular spot for walking, picnicking, and bird watching."
+        },
+        {
+            "title": "Hamilton Central Library",
+            "image": "./images/hamilton_central_library.webp",
+            "address": "Garden Place, Hamilton, Waikato",
+            "description": "A modern library with a wide range of resources and events.",
+            "modalContent": "Hamilton Central Library is the main library in Hamilton, New Zealand. It offers a wide range of resources, including books, magazines, DVDs, and digital resources, as well as events and programs for all ages."
+        },
+        {
+            "title": "Hamilton Lake Domain",
+            "image": "./images/hamilton_lake_domain.webp",
+            "address": "Lake Crescent, Hamilton, Waikato",
+            "description": "A popular spot for picnics, walking, and bird watching.",
+            "modalContent": "Hamilton Lake Domain is a popular recreational area in Hamilton, New Zealand. It features a large lake, walking tracks, playgrounds, and picnic areas, making it a great spot for families and outdoor enthusiasts."
+        },
+        {
+            "title": "Claudelands Arena",
+            "image": "./images/claudelands.webp",
+            "address": "Corner of Brooklyn Road and Heaphy Terrace, Hamilton, Waikato",
+            "description": "A premier venue for concerts, events, and exhibitions.",
+            "modalContent": "Claudelands Arena is a premier venue in Hamilton, New Zealand, hosting concerts, events, and exhibitions. It is located at the corner of Brooklyn Road and Heaphy Terrace."
+        },
+        {
+            "title": "Hamilton New Zealand Temple",
+            "image": "./images/temple.webp",
+            "address": "509 Tuhikaramea Road, Temple View, Hamilton, Waikato",
+            "description": "The Hamilton New Zealand Temple is a temple of The Church of Jesus Christ of Latter-day Saints.",
+            "modalContent": "The Hamilton New Zealand Temple is a temple of The Church of Jesus Christ of Latter-day Saints. It was the first temple built in the Southern Hemisphere and serves members of the church in New Zealand and the surrounding areas."
+        }
+    ]
+}

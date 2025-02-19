@@ -19,6 +19,7 @@
     <script src="scripts/mobile_navbar.js"></script>
     <script src="scripts/localstorage.js"></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     <title>Waikato Chamber of Commerce</title>
 </head>
 
@@ -31,9 +32,9 @@
                 <a href="index.html" class="navbar-item">Home</a>
                 <a href="directory.html" class="navbar-item">Directory</a>
                 <a href="join.html" class="navbar-item">Join</a>
-                <a href="discover.html" class="navbar-item">Discover</a>
+                <a href="discover.html" class="navbar-item active-page">Discover</a>
             </div>
-            <div class="navbar-toggle" id="mobile-menu">
+            <div class="navbar-toggle" id="mobile-menu" role="button" aria-expanded="false" tabindex="0">
                 ☰
             </div>
         </div>
@@ -63,170 +64,36 @@
 
     <h2>Discover</h2>
 
-    <div class="cards-container">
-        <div class="card">
-            <h2>Hamilton Gardens</h2>
-            <figure>
-                <img src="./images/hamilton_gardens.webp" alt="Hamilton Gardens">
-            </figure>
-            <address>Hungerford Crescent, Hamilton, Waikato</address>
-            <p>A beautiful public garden with themed gardens and events.</p>
-            <button onclick="openModal('modal1')">Learn More</button>
-        </div>
-        <div class="card">
-            <h2>Waikato Museum</h2>
-            <figure>
-                <img src="./images/waikato_museum.webp" alt="Waikato Museum">
-            </figure>
-            <address>1 Grantham Street, Hamilton, Waikato</address>
-            <p>Explore the rich history and culture of the Waikato region.</p>
-            <button onclick="openModal('modal2')">Learn More</button>
-        </div>
-        <div class="card">
-            <h2>Hamilton Zoo</h2>
-            <figure>
-                <img src="./images/hamilton_zoo.webp" alt="Hamilton Zoo">
-            </figure>
-            <address>183 Brymer Road, Hamilton, Waikato</address>
-            <p>Home to over 600 native and exotic animals.</p>
-            <button onclick="openModal('modal3')">Learn More</button>
-        </div>
-        <div class="card">
-            <h2>Lake Rotoroa</h2>
-            <figure>
-                <img src="./images/lake_rotoroa.webp" alt="Lake Rotoroa">
-            </figure>
-            <address>Innes Common, Hamilton, Waikato</address>
-            <p>A scenic lake with walking tracks and recreational activities.</p>
-            <button onclick="openModal('modal4')">Learn More</button>
-        </div>
-        <div class="card">
-            <h2>Hamilton Central Library</h2>
-            <figure>
-                <img src="./images/hamilton_central_library.webp" alt="Hamilton Central Library">
-            </figure>
-            <address>Garden Place, Hamilton, Waikato</address>
-            <p>A modern library with a wide range of resources and events.</p>
-            <button onclick="openModal('modal5')">Learn More</button>
-        </div>
-        <div class="card">
-            <h2>Hamilton Lake Domain</h2>
-            <figure>
-                <img src="./images/hamilton_lake_domain.webp" alt="Hamilton Lake Domain">
-            </figure>
-            <address>Lake Crescent, Hamilton, Waikato</address>
-            <p>A popular spot for picnics, walking, and bird watching.</p>
-            <button onclick="openModal('modal6')">Learn More</button>
-        </div>
-        <div class="card">
-            <h2>Claudelands Arena</h2>
-            <figure>
-                <img src="./images/claudelands.webp" alt="Claudelands Arena">
-            </figure>
-            <address>Corner of Brooklyn Road and Heaphy Terrace, Hamilton, Waikato</address>
-            <p>A premier venue for concerts, events, and exhibitions.</p>
-            <button onclick="openModal('modal7')">Learn More</button>
-        </div>
-        <div class="card">
-            <h2>Hamilton New Zealand Temple</h2>
-            <figure>
-                <img src="./images/temple.webp" alt="Hamilton New Zealand Temple">
-            </figure>
-            <address>509 Tuhikaramea Road, Temple View, Hamilton, Waikato</address>
-            <p>The Hamilton New Zealand Temple is a temple of The Church of Jesus Christ of Latter-day Saints.</p>
-            <button onclick="openModal('modal8')">Learn More</button>
-        </div>
+    <div class="cards-container" id="cards-container">
     </div>
 
-    <!-- Modal Structure -->
     <div id="modal1" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <h2>Hamilton Gardens</h2>
-            <p>Hamilton Gardens is a public garden in the south of Hamilton owned and managed by the Hamilton City
-                Council. It is the most popular visitor attraction in the Waikato region, attracting more than one
-                million visitors each year.</p>
-        </div>
-    </div>
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <h2>Waikato Museum</h2>
-            <p>Waikato Museum Te Whare Taonga o Waikato is a regional museum located in Hamilton, New Zealand. The
-                museum focuses on the art, history, and culture of the Waikato region.</p>
-        </div>
-    </div>
-    <div id="modal3" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal3')">&times;</span>
-            <h2>Hamilton Zoo</h2>
-            <p>Hamilton Zoo is the main zoological garden of Hamilton, New Zealand. It is located on Brymer Road in the
-                Hamilton suburb of Rotokauri, on the western outskirts of the city.</p>
-        </div>
-    </div>
-    <div id="modal4" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal4')">&times;</span>
-            <h2>Lake Rotoroa</h2>
-            <p>Lake Rotoroa, also known as Hamilton Lake, is a lake in Hamilton, New Zealand. It is located to the west
-                of the city center, and is a popular spot for walking, picnicking, and bird watching.</p>
-        </div>
-    </div>
-    <div id="modal5" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal5')">&times;</span>
-            <h2>Hamilton Central Library</h2>
-            <p>Hamilton Central Library is the main library in Hamilton, New Zealand. It offers a wide range of
-                resources, including books, magazines, DVDs, and digital resources, as well as events and programs for
-                all ages.</p>
-        </div>
-    </div>
-    <div id="modal6" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal6')">&times;</span>
-            <h2>Hamilton Lake Domain</h2>
-            <p>Hamilton Lake Domain is a popular recreational area in Hamilton, New Zealand. It features a large lake,
-                walking tracks, playgrounds, and picnic areas, making it a great spot for families and outdoor
-                enthusiasts.</p>
-        </div>
-    </div>
-    <div id="modal7" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal7')">&times;</span>
-            <h2>Claudelands Arena</h2>
-            <p>Claudelands Arena is a premier venue in Hamilton, New Zealand, hosting concerts, events, and exhibitions.
-                It is located at the corner of Brooklyn Road and Heaphy Terrace.</p>
-        </div>
-    </div>
-    <div id="modal8" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal8')">&times;</span>
-            <h2>Hamilton New Zealand Temple</h2>
-            <p>The Hamilton New Zealand Temple is a temple of The Church of Jesus Christ of Latter-day Saints. It was
-                the first temple built in the Southern Hemisphere and serves members of the church in New Zealand and
-                the surrounding areas.</p>
+            <h2 id="modal1-title">ModalHead</h2>
+            <p id="modal1-content"></p>
         </div>
     </div>
 
     <footer>
         <div class="cards-container">
-            <section>
+            <div>
                 <p>Waikato Chamber of Commerce</p>
                 <p>Hamilton, Waikato</p>
                 <p>info@waikato.com</p>
                 <p>999-888-7777</p>
-            </section>
-            <section>
+            </div>
+            <div>
                 <p>Facebook</p>
                 <p>Twitter</p>
                 <p>Instagram</p>
-            </section>
-            <section>
+            </div>
+            <div>
                 <p>WDD231 Class Project</p>
                 <p>Ryan Bodily</p>
                 <p>&copy; 2024 Waikato Chamber of Commerce</p>
                 <p id="lastModified"></p>
-            </section>
+            </div>
         </div>
     </footer>
     <script src="scripts/localstorage.js"></script>
