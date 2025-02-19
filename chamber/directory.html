@@ -14,6 +14,7 @@
     <meta property="og:url" content="https://ryanvb99.github.io/wdd231/chamber/directory.html">
 
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/commerce.css">
     <script src="scripts/getdates.js"></script>
     <script src="scripts/mobile_navbar.js"></script>
@@ -22,27 +23,29 @@
 </head>
 
 <body>
-    <h1>Waikato Chamber of Commerce</h1>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">Logo</a>
-            <div class="navbar-menu">
-                <a href="index.html" class="navbar-item">Home</a>
-                <a href="directory.html" class="navbar-item active-page">Directory</a>
-                <a href="join.html" class="navbar-item">Join</a>
-                <a href="discover.html" class="navbar-item">Discover</a>
+    <header>
+        <h1>Waikato Chamber of Commerce</h1>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo">Logo</a>
+                <div class="navbar-menu">
+                    <a href="index.html" class="navbar-item">Home</a>
+                    <a href="directory.html" class="navbar-item active-page">Directory</a>
+                    <a href="join.html" class="navbar-item">Join</a>
+                    <a href="discover.html" class="navbar-item">Discover</a>
+                </div>
+                <div class="navbar-toggle" id="mobile-menu">
+                    ☰
+                </div>
             </div>
-            <div class="navbar-toggle" id="mobile-menu">
-                ☰
-            </div>
+        </nav>
+        <div class="mobile-menu" id="mobile-menu-content">
+            <a href="index.html" class="mobile-menu-item">Home</a>
+            <a href="directory.html" class="mobile-menu-item">Directory</a>
+            <a href="join.html" class="mobile-menu-item">Join</a>
+            <a href="discover.html" class="mobile-menu-item">Discover</a>
         </div>
-    </nav>
-    <div class="mobile-menu" id="mobile-menu-content">
-        <a href="index.html" class="mobile-menu-item">Home</a>
-        <a href="directory.html" class="mobile-menu-item">Directory</a>
-        <a href="join.html" class="mobile-menu-item">Join</a>
-        <a href="discover.html" class="mobile-menu-item">Discover</a>
-    </div>
+    </header>
     <div class="hero-image">
         <img src="./images/waikato_hero.webp" alt="Hero Image">
     </div>
